@@ -1,0 +1,42 @@
+@import url(format.css);
+@import url(header.css);
+@import url(footer.css);
+body {
+  width: 100%; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+.panel-group {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 13px; }
+  .panel-group .panel {
+    margin: 0;
+    padding: 0; }
+    .panel-group .panel .panel-heading {
+      background: #0E2687;
+      padding: 10px;
+      margin: 0; }
+      .panel-group .panel .panel-heading .panel-title {
+        font-size: 18px;
+        color: white;
+        margin: 0; }
+        .panel-group .panel .panel-heading .panel-title a {
+          text-decoration: none; }
+    .panel-group .panel .panel-collapse {
+      margin: 0;
+      padding: 0; }
+      .panel-group .panel .panel-collapse .panel-body {
+        width: 90%;
+        margin: 0 auto;
+        padding: 15px;
+        color: black;
+        font-size: 16px; }
+        .panel-group .panel .panel-collapse .panel-body ul {
+          width: 90%;
+          margin: 0 auto; }
+
+/*# sourceMappingURL=services.css.map */

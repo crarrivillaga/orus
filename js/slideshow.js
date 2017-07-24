@@ -1,0 +1,13 @@
+$(document).ready(function(){
+    $('.slide_ppal').slick({
+        autoplay:true,
+        autoplaySpeed:1950,
+        dots:true,
+        arrows:true,
+        infinite:true,
+        speed:1500,
+        fade:true,
+        pauseOnHover:false,
+        touchMove:true
+    });
+});

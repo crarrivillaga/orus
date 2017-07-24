@@ -1,0 +1,29 @@
+@import url(format.css);
+@import url(header.css);
+@import url(footer.css);
+body {
+  width: 100%; }
+  body p {
+    margin: 0;
+    padding: 0; }
+
+#content {
+  position: relative;
+  padding: 20px; }
+  #content #sitemap {
+    position: relative; }
+    #content #sitemap p {
+      font-size: 30px;
+      color: #222222;
+      font-weight: bold;
+      width: 40%; }
+    #content #sitemap ul {
+      position: relative;
+      padding: 20px; }
+      #content #sitemap ul li {
+        list-style: none; }
+        #content #sitemap ul li a {
+          font-size: 16px;
+          color: #222222; }
+
+/*# sourceMappingURL=sitemap.css.map */

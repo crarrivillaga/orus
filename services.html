@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"><!--- RESPONSIVE (Viewport para dispositivos moviles) -->
+        <meta name="description" content="Acerca de la empresa/pagina"> <!--Lo que aparece al buscar en google-->
+        <meta name="keywords" contect="">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!--bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> <!--bootstrap-->
+        <link rel="stylesheet" href="css/services.css"> <!--external css-->
+        <link rel="stylesheet" href="css/normalize.css"> 
+        <link rel="stylesheet" href=""> <!--iconos-->
+        <link rel="icon" href="images/favicon.ico"> <!--favicon-->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- JQUERY -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> <!--bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> <!--- jquery -->        
+        
+        <script>
+            $(document).ready(function(){
+                $('#sky').click(function(){
+                    $('body, html').animate({
+                        scrollTop: '0px'
+                    }, 300); //300, velocidad en la que sube                    
+                }); 
+                
+                $(window).scroll(function(){
+                    if($(this).scrollTop() > 0){
+                        $('#sky').slideDown(300);
+                    }else{
+                        $('#sky').slideUp(300);
+                    } 
+                });
+            });
+        </script>
+        
+        <title>Seguridad Arce</title>
+	</head>
+	
+	<body>
+        <header>
+	        <div id="ins">
+	            <div id="logo">
+	                <img src="images/logo.jpg">
+	            </div>
+	            
+	            <div id="menu">
+	                <ul>
+	                    <li><a href="index.html">Inicio</a></li>
+                        <li><a href="us.html">Conócenos</a></li>
+	                    <li><a href="services.html">Servicios</a></li>
+	                    <li><a href="clients.html">Nuestros Clientes</a></li>
+	                    <li><a href="contact.html">Contacto</a></li>
+	                </ul>
+	            </div>
+	        </div>
+	    </header>
+	    
+	    
+	    <div id="content">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+               
+               <!------- SEGURIDAD PRIVADA ------------->
+               
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Seguridad Privada</a>
+                        </h4>
+                    </div>
+                    
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                        <!-- contenido -->
+                            <p>Estamos dirigidos a empresas privadas tales comos Condominios, Fabricas, Industrias, Locales Comerciales, Puertos, Minerias, Entre Otras. teniendo una cobertura a nivel nacional</p>
+                            
+                            <br>
+                            
+                            <ul>
+                                <li>Un equipo de asesores es asignado para la fabricación de protocolos de control de acceso y vigilancia perimetral para cada cliente.</li>
+                                
+                                <li>Contamos con un equipo dedicado a brindar una atención preferente a cada cliente, compuesto por un departamento de relaciones comerciales.</li>
+                                
+                                <li>Acreditados por los organismos de orden y seguridad de Carabineros de Chile OS10.</li>
+                                
+                                <li>Nuestro Gerente propietario se encarga de supervisar personalmente que todos los acuerdos discutidos en la negociones de nivel empresa se cumplan fidedignamente en terreno.</li>
+                                
+                                <li>Seguridad Arce es la combinación entre hombre ytecnologia creada unica y exclusivamente para ser la solución definitiva a la problematica de inseguridad que sufre la mayoria de empresas en Chile.</li>
+                            </ul>
+                            
+                            <br>
+                            
+                            <p>El servicio se basa en instalar una dotación de personal de seguridad uniformado, orientado al control y seguridad de las instalaciones físicas del cliente, con la finalidad de prevenir pérdidas, robos o delitos de cualquier otra indole que provoquen alteraciones a las operaciones normales de la entidad.</p>
+                            
+                            <br>
+                            
+                            <!--
+                            <p><strong>Características del Personal de Seguridad</strong></p>
+                            
+                            <br>
+                            
+                            <ul>
+                                <li>Personal Chileno mayor de 25 años.</li>
+                                <li>Haber aprobado el examen de selección.</li>
+                                <li>Curso de Formación de Seguridad Aprobado por Carabineros de Chile.</li>
+                                <li>Experiencia Mínima en Recintos similares: 5 años.</li>
+                                <li>Contextura y estado físico acorde a la función que desempeña.</li>
+                                <li>Amplio manejo de situaciones en crisis y emergencias.</li>
+                                <li>Enfoque en la atención del cliente.</li>
+                                <li>Uniforme corporativo según la temporada.</li>
+                                <li>Otros requerimientos: Conocimientos en computación o inglés.</li>
+                            </ul>
+                            
+                            <br>
+                            
+                            <p><strong>Elementos de Protección Personal</strong></p>
+                            
+                            <br>
+                            
+                            <ul>
+                                <li>Calzado de Seguridad Táctico con talón reforzado de fibra.</li>
+                                <li>Lentes de Protección Solar “protección UV”.</li>
+                            </ul>
+                            
+                            <br>
+                            
+                            <p><strong>Características del uniforme Corporativo</strong></p>
+                            
+                            <br>
+                            
+                            <ul>
+                                <li>Camisa de Color celeste con Logos corporativos.</li>
+                                <li>Pantalón tipo cargo de color negro.</li>
+                                <li>Corbata de color negra.</li>
+                                <li>Chaqueta de color azul con siglas amarillas en ambos brazos.</li>
+                                <li>Chaqueta acolchada para bajas temperaturas.</li>
+                                <li>Fornitura.</li>
+                            </ul>
+                            
+                            <br>
+                            
+                            <p><strong>Características del Sistema de Patrullaje Aleatorio</strong></p>
+                            
+                            <br>
+                            
+                            <ul>
+                                <li>Consiste en efectuar patrullajes preventivos durante el servicio nocturno con un mínimo de 4 rondas de vigilancia.</li>
+                                <li>Consiste en mantener un vehículo atento a cualquier reacción que sea activada por atentados externos que podrían provocar un gran impacto en las operaciones de la entidad las 24 horas del día.</li>
+                            </ul>
+                            -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!------- ASEO PARA EMPRESA ------------->
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Aseo para empresa</a>
+                        </h4>
+                    </div>
+                    
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                        <!-- contenido -->
+                            <p>“El aseo empresas déjelo a ARCE, la mantención diaria a su personal” Nos instalamos con un ejército de especialistas en aseo, fanáticos del aseo. Tenemos programas mensuales, trimestrales y semestrales”.</p>
+                            
+                            <br>
+                            
+                            <p>Si va recibir visitas importantes en su empresa, aquí tiene a un socio eficaz que  dejará  todas sus  dependencias como nuevas Rápidamente.<br><br> Menores costos totales en la limpieza,  pues  se evita comprar artículos, equipos y máquinas de aseo, así como el pago de las remuneraciones del personal de  aseo; su seguridad social, beneficios  voluntarios; reemplazo por ausencias, vacaciones,  enfermedades y permisos.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!------- ALCANCES OPERATIVOS ------------->
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Alcance Operativo</a>
+                        </h4>
+                    </div>
+                    
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                        <!-- contenido -->
+                            <p><strong>Postulantes</strong></p>
+                            
+                            <br>
+                            
+                            <p>Seguridad Arce SPA dispone de una nutrida lista de postulantes al cargo de Guardias de seguridad quienes han sido sometidos a diversos procesos de selección los cuales detallamos:</p><br>
+                            
+                            <ul>
+                                <li>Preselección a través de redes sociales.</li>
+                                <li>Haber completado los exámenes de selección de personal.</li>
+                                <li>Presentación de documentación.</li>
+                                <li>Investigación en materias de antecedentes personales.</li>
+                                <li>Entrevista Personal.</li>
+                                <li>Inducción Hombre Nuevo Arce.</li>
+                                <li>Inducción en Prevención de Riesgos Laborales ODI DS.40.</li>
+                                <li>Prueba de conocimientos de Seguridad Aplicada a diversos escenarios.</li>
+                                <li>Inserción a Lista de espera.</li>
+                            </ul>
+                            
+                            <br>
+                            
+                            <p>Pudiendo con esto estar prestos a la apertura de instalaciones físicas en cualquier comuna del país, con personal idóneo y altamente comprometido en mantener una relación contractual con Seguridad ARCE SPA.</p>
+                            
+                            <br>
+                            
+                            <p><strong>Vehículos</strong></p>
+                            
+                            <br>
+                            
+                            <p>Seguridad ARCE SPA Cuenta con una flota  de vehículos acondicionados como Patrullas de reaccion lo que permite una rapida asistencia a nuestros clientes.</p>
+                            
+                            <br>
+                            
+                            <p><strong>Asisop</strong></p>
+                            
+                            <br>
+                            
+                            <p>En la actualidad Seguridad ARCE SPA cuenta con un equipo de Asisop(asistentes de operaciones)por zona, quienes son los encargados de asegurar la calidad de ejecución de los servicios contratados, los cuales tienen un perfil adecuado a su función y una formación generalista y multidisciplinaria.</p>
+                            
+                            <br>
+                            
+                            <p><strong>Perfil del Personal de Seguridad</strong></p>
+                            
+                            <br>
+                            
+                            <p>El Personal seleccionado y contratado es según el tipo de recinto, los cuales tienen en general el siguiente perfil:</p>
+                            
+                            <br>
+                            
+                            <ul>
+                                <li>Curso de Formación de Guardia de Seguridad dictado y aprobado por OS10 de Carabineros de Chile con un porcentaje final mínimo de 70% de asertividad.</li>
+                                <li>Idoneidad Profesional, civil y Moral intachable esto significa: contar con su situación militar al día, sin antecedentes penitenciarios, Sin Dicom y con estudios Medios completos.</li>
+                                <li>Contar con un historial Laboral favorable en trabajos anteriores</li>
+                                <li>Tener una experiencia Mínima en cargos similares de 5 años.</li>
+                                <li>Peso, estatura y contextura acorde al tipo de recinto y función asignada</li>
+                                <li>Contar con un estado de Salud compatible con el Cargo.</li>
+                                <li>En su mayoría personal empático de trato cordial y de postura con endereza.</li>
+                            </ul>
+                            
+                            <br>
+                            
+                            <p><strong>Características del Uniforme Corporativo</strong></p>
+                            
+                            <br>
+                            
+                            <p>Seguridad Arce SPA cuenta con dos tipos de tenidas autorizadas, dependiendo de la estación del año, los cuales se caracterizan por marcar notablemente la diferencia:</p>
+                            
+                            <br>
+                            
+                            <ul>
+                                <li>Pantalón tipo Cargo Ocre.</li>
+                                <li>Polera Piquet Negra.</li>
+                                <li>Chaquetilla corte Policial.</li>
+                                <li>Calzado de Seguridad deportivo.</li>
+                                <li>Tenida Formal.</li>
+                            </ul>
+                            
+                            <br>
+                            
+                            <p><strong>Características de los Implementos</strong></p>
+                            
+                            <br>
+                            
+                            <p>Seguridad Arce SPA Implementa en todos sus contratos todas las herramientas necesarias para un desempeño óptimo, lo que proporciona un aseguramiento continuo de la calidad de ejecución de los servicios.</p>
+                            
+                            <br>
+                            
+                            <ul>
+                                <li>Utilería de escritorio completo.</li>
+                                <li>Linternas tipo Led recargables.</li>
+                                <li>Esposas de Seguridad.</li>
+                                <li>Bastón retráctil.</li>
+                                <li>Camara GO-PRO con arnes</li>
+                                <li>Chalecos Anti-cortes</li>
+                                <li>Equipos de Radios</li>
+                                <li>Puntero Lasser</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!------- ALCANCES ADMINISTRATIVOS ------------->
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Alcance Administrativo</a>
+                        </h4>
+                    </div>
+                    
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body">
+                        <!-- contenido -->
+                            <p>Seguridad Arce SPA asigna en todos sus contratos un Administrador residente encargado de la zona, el cual está encargado de hacer un seguimiento continuo al funcionamiento de las instalaciones, siendo el encargado de participar activamente de reuniones de coordinación entre el contratante y Seguridad Arce SPA.<br><br>
+                            Seguridad arce SPA. Hara entrega de un nutrido kardex documental con toda la información necesaria para pasar positivamente cualquier fiscalizacion dando cumplimiento a todos los alcances administrativos legalmente vigentes.<br><br>Nuestra Empresa Está compuesta por profesionales del área de Seguridad, en su mayoría personas que dedicaron toda su vida al manejo de sistemas de seguridad física en diferentes escenarios que hoy traspasan su experiencia al personal de Seguridad Arce SPA.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!------- ALCANCES COMERCIALES ------------->
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFive">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Alcance Comercial</a>
+                        </h4>
+                    </div>
+                    
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                        <div class="panel-body">
+                        <!-- contenido -->
+                            <p>Seguridad Arce SPA tiene precios altamente competitivos en el mercado de la seguridad Privada sin la necesidad de mermar calidad, por tanto el precio final incluye todos los gastos asociados al contrato, siendo este el único precio que el cliente tiene que Pagar.<br><br> <strong>El sistema de Pago de nuestros servicios tiene que ejecutarse al contado.</strong></p>
+                        </div>
+                    </div>
+                </div>
+                                
+                <!------- CENTRAL DE COMUNICACIONES ------------->
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingSix">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Central de Comunicaciones ORUS</a>
+                        </h4>
+                    </div>
+                    
+                    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                        <div class="panel-body">
+                        <!-- contenido -->
+                            <p>Seguridad Arce SPA cuenta con una central de monitoreo, preocupada de tomar contacto con todas las instalaciones a nuestro cuidado,ademas de funcionar como el nucleo de centrelizacion de información en donde se coordina instrucciones tanto a los guardias como a los Asisop y operaciones en general, su funcionamiento es 24/7.</p>
+                            
+                            <br>
+                         
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+            </div>
+	    </div>
+	    
+	    
+	    <footer>
+	        <div id="insf">
+	            <div class="sec sec1">
+	                <p id="title">Menú</p>
+	                <ul>
+	                    <li><a href="index.html">Inicio</a></li>
+                        <li><a href="us.html">Conócenos</a></li>
+	                    <li><a href="services.html">Servicios</a></li>
+	                    <li><a href="clients.html">Nuestros Clientes</a></li>
+	                    <li><a href="contact.html">Contacto</a></li>
+	                </ul>
+	            </div>
+	            
+	            <div class="sec sec2">
+	                <p id="title">Mapa del sitio</p>
+	                <ul>
+	                    <li><a href="sitemap.html">Mapa del sitio</a></li>
+	                </ul>
+	            </div>
+	            
+	            <div class="sec sec3">
+	                <p id="title">Dirección</p>
+	                <a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, inventore assumenda!</a>
+	                <br><br>
+	                <p id="num">123-4567</p>
+	            </div>
+	        </div>
+	        <br>
+	        <p id="end">Seguridad Arce - Todos los derechos reservados.</p>
+	    </footer>
+	</body>
+</html>

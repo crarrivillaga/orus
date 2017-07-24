@@ -1,0 +1,27 @@
+@import url(format.css);
+@import url(header.css);
+@import url(footer.css);
+body {
+  width: 100%; }
+  body p {
+    margin: 0;
+    padding: 0; }
+
+#content {
+  position: relative; }
+  #content #img_bank {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center; }
+    #content #img_bank img {
+      padding: 20px;
+      width: 30%; }
+    #content #img_bank #arena, #content #img_bank #water {
+      width: 20%; }
+    #content #img_bank #super {
+      width: 35%; }
+    #content #img_bank #market {
+      width: 20%; }
+
+/*# sourceMappingURL=clients.css.map */

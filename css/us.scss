@@ -1,0 +1,54 @@
+@import "format.css";
+@import "header.css";
+@import "footer.css";
+
+$line_title: 3px solid #0E2687;
+
+body {
+    width: 100%;
+    
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+#content {
+    position: relative;
+    
+    #ins1 {
+        position: relative;
+        padding: 20px;
+        
+        #logo {
+            position: relative;
+            width: 20%;
+            margin: 0 auto;
+            
+            img {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+        
+        #descrip {
+            padding: 0 60px;
+            
+            #title {
+                font-size: 25px;
+                color: black;
+                font-weight: bold;
+                padding: 2px 0;
+                border-bottom: $line_title;
+                width: 15%;
+            }
+            
+            #info {
+                width: 80%;
+                margin: 0 auto;
+                font-size: 18px;
+                color: black;
+            }
+        }
+    }
+}

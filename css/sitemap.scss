@@ -1,0 +1,46 @@
+@import "format.css";
+@import "header.css";
+@import "footer.css";
+
+$line_title: 2px solid #0E2687;
+
+body {
+    width: 100%;
+    
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+#content {
+    position: relative;
+    padding: 20px;
+    //margin-bottom: 48px;
+    
+    #sitemap {
+        position: relative;
+        
+        p {
+            font-size: 30px;
+            color: #222222;
+            //border-bottom: $line_title;
+            font-weight: bold;
+            width: 40%;
+        }
+        
+        ul {
+            position: relative;
+            padding: 20px;
+            
+            li {
+                list-style: none;
+                
+                a {
+                    font-size: 16px;
+                    color: #222222;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@import url(format.css);
+@import url(header.css);
+@import url(footer.css);
+body {
+  width: 100%; }
+  body p {
+    margin: 0;
+    padding: 0; }
+
+#content {
+  position: relative; }
+  #content #ins1 {
+    position: relative;
+    padding: 20px; }
+    #content #ins1 #logo {
+      position: relative;
+      width: 20%;
+      margin: 0 auto; }
+      #content #ins1 #logo img {
+        width: 100%;
+        margin: 0 auto; }
+    #content #ins1 #descrip {
+      padding: 0 60px; }
+      #content #ins1 #descrip #title {
+        font-size: 25px;
+        color: black;
+        font-weight: bold;
+        padding: 2px 0;
+        border-bottom: 3px solid #0E2687;
+        width: 15%; }
+      #content #ins1 #descrip #info {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 18px;
+        color: black; }
+
+/*# sourceMappingURL=us.css.map */

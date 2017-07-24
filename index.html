@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"><!--- RESPONSIVE (Viewport para dispositivos moviles) -->
+        <meta name="description" content="Acerca de la empresa/pagina"> <!--Lo que aparece al buscar en google-->
+        <meta name="keywords" contect="">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!--bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> <!--bootstrap-->
+        <link rel="stylesheet" href="css/index.css"> <!--external css-->
+        <link rel="stylesheet" href="css/normalize.css"> 
+        <link rel="stylesheet" href="icons/fonts.css"> <!--iconos-->
+        <link rel="icon" href="images/favicon.ico"> <!--favicon-->
+        <link rel="stylesheet" href="css/slick/slick.css">
+        <link rel="stylesheet" href="css/slick/slick-theme.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- JQUERY -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> <!--bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> <!--- jquery -->        
+        
+        
+        
+        <script>
+            $(document).ready(function(){
+                $('#sky').click(function(){
+                    $('body, html').animate({
+                        scrollTop: '0px'
+                    }, 300); //300, velocidad en la que sube                    
+                }); 
+                
+                $(window).scroll(function(){
+                    if($(this).scrollTop() > 0){
+                        $('#sky').slideDown(300);
+                    }else{
+                        $('#sky').slideUp(300);
+                    } 
+                });
+            });
+        </script>
+        
+        <title>Seguridad Arce</title>
+	</head>
+	
+	
+	<body>
+    
+        <div class="intro">
+            <div id="ins">
+                <div id="logo">
+                    <img src="images/logo.jpg">
+                </div>
+                
+                <br><br>
+                <br>
+                <br>
+
+                <div id="btn">
+                    <input type="submit" value="Entrar" id="getin">
+                </div>
+            </div>
+        </div>
+        
+        <div class="start">
+            <header id="menu_desk">
+                <div id="ins">
+                    <div id="logo">
+                        <img src="images/logo.jpg">
+                    </div>
+
+                    <div id="menu">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="us.html">Conócenos</a></li>
+                            <li><a href="services.html">Servicios</a></li>
+                            <li><a href="clients.html">Clientes</a></li>
+                            <li><a href="contact.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+            <header id="menu_movil">
+                <div id="ins">
+                    <div id="btn_movil">
+                        <span class="icon-menu"></span>
+                    </div>
+                    
+                    <div id="logo">
+                        <img src="images/logo.jpg">
+                    </div>                    
+                </div>
+                
+                <div id="opc_movil">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="us.html">Conócenos</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="clients.html">Clientes</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </header>            
+
+            <div id="content"> 
+                <div class="slide_ppal">
+                    <div><img src="images/slide2.png"></div>
+                    <div><img src="images/slide1.png"></div>
+                </div>
+                           
+                <div id="ins2">
+                    <div id="mision" class="scrollflow -slide-right -opacity">
+                        <p id="title">Misión</p>
+                        <br><br>
+                        <p id="info">Brindar servicio integral de seguridad a quienes lo requieran utilizando personal calificado y uniformado; custodiar el bienestar del contratante y prevenir actos delictivos en la región.</p>
+                    </div>
+                    
+                    <div id="mision_m" class="scrollflow -pop -opacity">
+                        <p id="title">Misión</p>
+                        <br><br>
+                        <p id="info">Brindar servicio integral de seguridad a quienes lo requieran utilizando personal calificado y uniformado; custodiar el bienestar del contratante y prevenir actos delictivos en la región.</p>
+                    </div>
+
+                    <div id="vision" class="scrollflow -slide-left -opacity">
+                        <p id="title">Visión</p>
+                        <br><br>
+                        <p id="info">Abarcar el territorio chileno con nuestros servicios, dando a conocer la calidad, ejecución y compromiso con nuestro excelente y mejorado trabajo.</p>
+                    </div>
+                    
+                    <div id="vision_m" class="scrollflow -pop -opacity">
+                        <p id="title">Visión</p>
+                        <br><br>
+                        <p id="info">Abarcar el territorio chileno con nuestros servicios, dando a conocer la calidad, ejecución y compromiso con nuestro excelente y mejorado trabajo.</p>
+                    </div>
+                </div>
+
+                <div id="ins3">
+                    <p id="title">Nuestros Servicios</p>
+                    <br><br>
+                    <div id="services">
+                        <div class="fil scrollflow -pop -opacity">
+                            <a class="serv" href="services.html" target="_blank">
+                                <span class="icon-key"></span><br><br>
+                                <p id="info">Seguridad<br>Privada</p>
+                            </a>
+
+                            <a class="serv" href="services.html" target="_blank">
+                                <span class="icon-accessibility"></span><br><br>
+                                <p id="info">Aseo para<br>empresas</p>
+                            </a>
+
+                            <a class="serv" href="services.html" target="_blank">
+                                <span class="icon-cogs"></span><br><br>
+                                <p id="info">Alcance<br>Operativo</p>
+                            </a>
+                        </div>
+
+                        <div class="fil scrollflow -pop -opacity">
+                            <a class="serv" href="services.html" target="_blank">
+                                <span class="icon-tree"></span><br><br>
+                                <p id="info">Alcance<br>Administrativo</p>
+                            </a>
+
+                            <a class="serv" href="services.html" target="_blank">
+                                <span class="icon-office"></span><br><br>
+                                <p id="info">Alcance<br>Comercial</p>
+                            </a>
+
+                            <a class="serv" href="services.html" target="_blank">
+                                <span class="icon-phone"></span><br><br>
+                                <p id="info">Central de<br>Comunicaciones<br> ORUS</p>
+                            </a>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div id="ins4">
+                    <div id="f_clients">
+                        <p id="title">Algunos de nuestros clientes</p>
+                        <br><br>
+                        <img src="images/group_img1.png" class="scrollflow -pop -opacity">
+                        <img src="images/group_img2.png" class="scrollflow -pop -opacity">
+                    </div>
+
+                    <br><br>
+
+                    <div id="btn">
+                        <a href="clients.html">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div id="insf">
+                    <div class="sec sec1">
+                        <p id="title">Menú</p>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="us.html">Conócenos</a></li>
+                            <li><a href="services.html">Servicios</a></li>
+                            <li><a href="clients.html">Clientes</a></li>
+                            <li><a href="contact.html">Contacto</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sec sec2">
+                        <p id="title">Mapa del sitio</p>
+                        <ul>
+                            <li><a href="sitemap.html">Mapa del sitio</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sec sec3">
+                        <p id="title">Dirección</p>
+                        <a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, inventore assumenda!</a>
+                        <br><br>
+                        <p id="num">123-4567</p>
+                    </div>
+                </div>
+                <br>
+                <p id="end">Seguridad Arce - Todos los derechos reservados.</p>
+            </footer>
+        </div>
+	    
+	    
+	    <script src="js/eskju.jquery.scrollflow.min.js"></script>
+	    <script src="css/slick/slick.min.js"></script>
+	    <script src="js/slideshow.js"></script>
+	    <script src="js/start.js"></script>
+	    <script src="js/movil.js"></script>
+	</body>
+</html>
