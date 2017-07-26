@@ -52,3 +52,49 @@ body {
         }
     }
 }
+
+//Smartphones
+@media only screen and (max-width:1024px) {
+    #content {
+        position: relative;
+
+        #ins1 {
+            position: relative;
+            padding: 20px;
+
+            #logo {
+                position: relative;
+                width: 40%;
+                margin: 0 auto;
+
+                img {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+
+            #descrip {
+                padding: 0 20px;
+
+                #title {
+                    font-size: 25px;
+                    color: black;
+                    font-weight: bold;
+                    padding: 2px 0;
+                    border-bottom: $line_title;
+                    width: 60%;
+                    text-align: center;
+                    margin: 0 auto;
+                }
+
+                #info {
+                    width: 100%;
+                    margin: 0 auto;
+                    font-size: 18px;
+                    color: black;
+                }
+            }
+        }
+    }
+
+}

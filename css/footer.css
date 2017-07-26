@@ -1,7 +1,8 @@
 footer {
   position: relative;
   width: 100%;
-  background: #222222; }
+  background: #222222;
+  margin-bottom: 0; }
   footer p {
     margin: 0;
     padding: 0; }

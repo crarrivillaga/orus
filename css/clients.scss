@@ -38,3 +38,34 @@ body {
         }
     }
 }
+
+//Smartphones
+@media only screen and (max-width:1024px) {
+    #content {
+        position: relative;
+
+        #img_bank {
+            position: relative;
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+
+            img {
+                padding: 20px;
+                width: 50%;
+            }
+
+            #arena, #water {
+                width: 40%;
+            }
+
+            #super {
+                width: 55%;
+            }
+
+            #market {
+                width: 40%;
+            }
+        }
+    }
+}

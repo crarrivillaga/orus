@@ -5,8 +5,15 @@
     transform: translate(-35%, 50%);
 }
 
-$line_title: 3px solid #0E2687;
+@mixin centrado_btn_menu {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(-150%, -50%);
+}
 
+$line_title: 3px solid #0E2687;
+//
 #menu_movil, #opc_movil {
     display: none;
 }
@@ -83,25 +90,30 @@ header {
         max-width: 1000px;
         
         #ins {
+            //background: blue;
             #logo {
                 position: relative;
-                width: 30%;
+                width: 50%;
                 margin: 0 auto;
                 text-align: center;
-                background: green;
+                //background: green;
 
                 img {
-                    //width: 40%;
-                    max-width: 60%;
+                    width: 30%;
+                    //max-width: 60%;
                 }
             }
             
-            #btn_movil {      
-                background: red;
+            #btn_movil {
+                position: relative;
+                @include centrado_btn_menu;
+                //background: red;
+                
                 span {
+                    
                     position: relative;
                     top: 30%;
-                    padding: 10px;
+                    padding: 5px;
                     margin: auto;
                     font-size: 30px;
                     border: $border_box;
@@ -118,7 +130,7 @@ header {
             //top: 50px;
             left: -100%;
             z-index: 101;
-            width: 30%;
+            width: 40%;
             height: 100%;
             border-right: $line_title;
 
@@ -153,6 +165,6 @@ header {
     
     #content {
         position: relative;
-        margin-top: 20%;
+        margin-top: 30%;
     }
 }

@@ -110,25 +110,36 @@ body {
         .start #content #ins3 #services .fil {
           position: relative;
           width: 100%;
+          text-align: center;
           display: flex; }
           .start #content #ins3 #services .fil .serv {
             text-decoration: none;
             padding: 20px;
             text-align: center;
-            margin: 10px auto; }
-            .start #content #ins3 #services .fil .serv span {
-              font-size: 40px;
-              color: white;
-              padding: 25px;
-              border-radius: 255px;
-              text-align: center;
-              background: #0a1955;
-              width: 90%;
-              margin: 0 auto; }
+            margin: 10px auto;
+            width: 100%; }
+            .start #content #ins3 #services .fil .serv a {
+              text-decoration: none; }
+              .start #content #ins3 #services .fil .serv a span {
+                font-size: 40px;
+                color: white;
+                padding: 25px;
+                border-radius: 255px;
+                text-align: center;
+                background: #0a1955;
+                width: auto;
+                margin: 0 auto;
+                transition: 0.3s; }
+                .start #content #ins3 #services .fil .serv a span:hover {
+                  transition: 0.3s;
+                  background: white;
+                  color: #0E2687; }
             .start #content #ins3 #services .fil .serv #info {
-              font-size: 16px;
+              font-size: 18px;
               color: white;
-              padding: 10px; }
+              padding: 20px;
+              margin: 0 auto;
+              text-align: center; }
     .start #content #ins4 {
       position: relative;
       padding: 20px; }
@@ -160,100 +171,158 @@ body {
           padding: 10px; }
 
 @media only screen and (max-width: 1024px) {
-  .start #content #ins2 {
-    display: block;
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px; }
-    .start #content #ins2 #mision {
-      display: none; }
-    .start #content #ins2 #mision_m {
+  body {
+    width: 100%; }
+
+  .intro {
+    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%); }
+    .intro #ins {
+      position: relative; }
+      .intro #ins #logo {
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+        text-align: center; }
+        .intro #ins #logo img {
+          width: 100%; }
+      .intro #ins #btn {
+        position: relative;
+        display: block;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto; }
+        .intro #ins #btn input {
+          position: relative;
+          width: 120px;
+          padding: 10px;
+          font-size: 20px;
+          background: #0E2687;
+          color: white; }
+
+  .start {
+    position: relative; }
+    .start #content .slide_ppal {
+      width: 70%;
+      margin: 5% auto; }
+      .start #content .slide_ppal img {
+        width: 100%; }
+    .start #content #ins2 {
       display: block;
-      position: relative;
-      width: 60%;
-      margin: 50px auto; }
-      .start #content #ins2 #mision_m #title {
-        font-size: 20px;
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px; }
+      .start #content #ins2 #mision {
+        display: none; }
+      .start #content #ins2 #mision_m {
+        display: block;
+        position: relative;
+        width: 100%;
+        margin: 50px auto; }
+        .start #content #ins2 #mision_m #title {
+          font-size: 20px;
+          color: black;
+          font-weight: bold;
+          padding: 2px 0;
+          border-bottom: 3px solid #0E2687;
+          width: 30%;
+          margin: 0 auto;
+          text-align: center; }
+        .start #content #ins2 #mision_m #info {
+          width: 100%;
+          margin: 0 auto;
+          font-size: 17px;
+          color: black; }
+      .start #content #ins2 #vision {
+        display: none; }
+      .start #content #ins2 #vision_m {
+        display: block;
+        position: relative;
+        width: 100%;
+        margin: 10px auto; }
+        .start #content #ins2 #vision_m #title {
+          font-size: 20px;
+          color: black;
+          font-weight: bold;
+          padding: 2px 0;
+          border-bottom: 3px solid #0E2687;
+          width: 30%;
+          margin: 0 auto;
+          text-align: center; }
+        .start #content #ins2 #vision_m #info {
+          width: 100%;
+          margin: 0 auto;
+          font-size: 17px;
+          color: black; }
+    .start #content #ins3 {
+      padding: 10px; }
+      .start #content #ins3 #title {
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        padding: 2px 0;
+        border-bottom: 3px solid white;
+        width: 60%;
+        margin: 0 auto;
+        text-align: center; }
+      .start #content #ins3 #services {
+        text-align: center;
+        align-content: center; }
+        .start #content #ins3 #services .fil {
+          display: block;
+          width: 100%; }
+          .start #content #ins3 #services .fil .serv {
+            text-decoration: none;
+            padding: 0px;
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+            display: flex; }
+            .start #content #ins3 #services .fil .serv a span {
+              font-size: 30px;
+              padding: 20px;
+              text-align: center;
+              margin: 0 auto;
+              width: auto; }
+            .start #content #ins3 #services .fil .serv #info {
+              font-size: 15px;
+              text-align: center;
+              width: 80%;
+              position: absolute;
+              left: 60%;
+              top: 30%;
+              transform: translate(-50%, -50%); }
+    .start #content #ins4 #f_clients {
+      width: 100%;
+      padding: 0 10px; }
+      .start #content #ins4 #f_clients #title {
+        font-size: 18px;
         color: black;
         font-weight: bold;
         padding: 2px 0;
         border-bottom: 3px solid #0E2687;
-        width: 30%;
-        margin: 0 auto;
-        text-align: center; }
-      .start #content #ins2 #mision_m #info {
         width: 100%;
         margin: 0 auto;
-        font-size: 17px;
-        color: black; }
-    .start #content #ins2 #vision {
-      display: none; }
-    .start #content #ins2 #vision_m {
-      display: block;
-      position: relative;
-      width: 60%;
-      margin: 10px auto; }
-      .start #content #ins2 #vision_m #title {
-        font-size: 20px;
-        color: black;
-        font-weight: bold;
-        padding: 2px 0;
-        border-bottom: 3px solid #0E2687;
-        width: 30%;
-        margin: 0 auto;
         text-align: center; }
-      .start #content #ins2 #vision_m #info {
+      .start #content #ins4 #f_clients img {
         width: 100%;
-        margin: 0 auto;
-        font-size: 17px;
-        color: black; }
-  .start #content #ins3 #title {
-    font-size: 18px;
-    color: white;
-    font-weight: bold;
-    padding: 2px 0;
-    border-bottom: 3px solid white;
-    width: 40%;
-    margin: 0 auto;
-    text-align: center; }
-  .start #content #ins3 #services .fil {
-    display: block; }
-    .start #content #ins3 #services .fil .serv {
-      text-decoration: none;
-      padding: 20px;
+        text-align: center;
+        padding: 40px 0; }
+    .start #content #ins4 #btn {
+      width: 100px;
+      border-radius: 20px;
+      background: #222222;
       text-align: center;
-      margin: 30% auto; }
-      .start #content #ins3 #services .fil .serv span {
-        font-size: 30px;
-        padding: 25px; }
-      .start #content #ins3 #services .fil .serv #info {
+      margin: 0 auto;
+      padding: 10px; }
+      .start #content #ins4 #btn a {
+        position: relative;
+        text-decoration: none;
         font-size: 16px;
-        padding: 10px; }
-  .start #content #ins4 #f_clients #title {
-    font-size: 18px;
-    color: black;
-    font-weight: bold;
-    padding: 2px 0;
-    border-bottom: 3px solid #0E2687;
-    width: 50%;
-    margin: 0 auto;
-    text-align: center; }
-  .start #content #ins4 #f_clients img {
-    width: 100%;
-    text-align: center;
-    padding: 40px 0; }
-  .start #content #ins4 #btn {
-    width: 20%;
-    border-radius: 20px;
-    background: #222222;
-    text-align: center;
-    margin: 0 auto;
-    padding: 10px; }
-    .start #content #ins4 #btn a {
-      position: relative;
-      text-decoration: none;
-      font-size: 16px;
-      color: white;
-      padding: 10px; } }
+        color: white;
+        padding: 10px; } }
 
 /*# sourceMappingURL=index.css.map */

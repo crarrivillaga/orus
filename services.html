@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> <!--bootstrap-->
         <link rel="stylesheet" href="css/services.css"> <!--external css-->
         <link rel="stylesheet" href="css/normalize.css"> 
-        <link rel="stylesheet" href=""> <!--iconos-->
+        <link rel="stylesheet" href="icons/fonts.css"> <!--iconos-->
         <link rel="icon" href="images/favicon.ico"> <!--favicon-->
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- JQUERY -->
@@ -39,23 +39,45 @@
 	</head>
 	
 	<body>
-        <header>
-	        <div id="ins">
-	            <div id="logo">
-	                <img src="images/logo.jpg">
-	            </div>
-	            
-	            <div id="menu">
-	                <ul>
-	                    <li><a href="index.html">Inicio</a></li>
+        <header id="menu_desk">
+            <div id="ins">
+                <div id="logo">
+                    <img src="images/logo.jpg">
+                </div>
+
+                <div id="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
                         <li><a href="us.html">Conócenos</a></li>
-	                    <li><a href="services.html">Servicios</a></li>
-	                    <li><a href="clients.html">Nuestros Clientes</a></li>
-	                    <li><a href="contact.html">Contacto</a></li>
-	                </ul>
-	            </div>
-	        </div>
-	    </header>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="clients.html">Clientes</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <header id="menu_movil">
+            <div id="ins">
+                <div id="btn_movil">
+                    <span class="icon-menu"></span>
+                </div>
+
+                <div id="logo">
+                    <img src="images/logo.jpg">
+                </div>                    
+            </div>
+
+            <div id="opc_movil">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="us.html">Conócenos</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="clients.html">Clientes</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </header>
 	    
 	    
 	    <div id="content">
@@ -342,9 +364,6 @@
                     </div>
                 </div>
                 
-                
-                
-                
             </div>
 	    </div>
 	    
@@ -379,5 +398,7 @@
 	        <br>
 	        <p id="end">Seguridad Arce - Todos los derechos reservados.</p>
 	    </footer>
+	    
+	    <script src="js/movil.js"></script>
 	</body>
 </html>

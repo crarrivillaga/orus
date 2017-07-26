@@ -39,25 +39,47 @@
 	</head>
 	
     <body>
-       <header>
-	        <div id="ins">
-	            <div id="logo">
-	                <img src="images/logo.jpg">
-	            </div>
-	            
-	            <div id="menu">
-	                <ul>
-	                    <li><a href="index.html">Inicio</a></li>
+        <header id="menu_desk">
+            <div id="ins">
+                <div id="logo">
+                    <img src="images/logo.jpg">
+                </div>
+
+                <div id="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
                         <li><a href="us.html">Conócenos</a></li>
-	                    <li><a href="services.html">Servicios</a></li>
-	                    <li><a href="clients.html">Nuestros Clientes</a></li>
-	                    <li><a href="contact.html">Contacto</a></li>
-	                </ul>
-	            </div>
-	        </div>
-	    </header>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="clients.html">Clientes</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <header id="menu_movil">
+            <div id="ins">
+                <div id="btn_movil">
+                    <span class="icon-menu"></span>
+                </div>
+
+                <div id="logo">
+                    <img src="images/logo.jpg">
+                </div>                    
+            </div>
+
+            <div id="opc_movil">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="us.html">Conócenos</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="clients.html">Clientes</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+        </header> 
 	    
-	   <div id="content">
+        <div id="content">
 	       <div id="img_bank">
 	           <img src="images/logo-cabal.png" id="cabal" class="scrollflow -pop -opacity"><br>
 	           <img src="images/Logo_Femoglas_wiki.jpg" id="femo" class="scrollflow -slide-right -opacity"><br>
@@ -70,7 +92,7 @@
 	           <img src="images/mercado.jpg" id="market"class="scrollflow -slide-left -opacity"><br>
 	           <img src="images/biecsa1.jpg" id="biecsa" class="scrollflow -pop -opacity">
 	       </div>
-	   </div>        
+        </div>        
 	   
 	   <footer>
 	        <div id="insf">
@@ -104,5 +126,6 @@
 	    </footer>
 	    
 	    <script src="js/eskju.jquery.scrollflow.min.js"></script>
+	    <script src="js/movil.js"></script>
     </body>
 </html>

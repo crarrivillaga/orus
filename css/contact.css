@@ -50,4 +50,48 @@ body {
         background: #0E2687;
         color: white; }
 
+@media only screen and (max-width: 1024px) {
+  #content {
+    position: relative;
+    padding: 10px; }
+    #content form {
+      position: relative;
+      width: 85%;
+      margin: 0 auto;
+      background: #e3e3e3;
+      border-radius: 10px;
+      border: 2px solid #222222; }
+      #content form #ins {
+        padding: 10px;
+        width: 90%;
+        margin: 0 auto; }
+        #content form #ins input, #content form #ins textarea {
+          width: 100%;
+          color: black;
+          padding: 5px;
+          border-radius: 10px; }
+        #content form #ins p {
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+          color: black;
+          border-bottom: 2px solid #0E2687;
+          width: 80%;
+          margin: 0 auto; }
+          #content form #ins p span {
+            color: #0E2687;
+            margin-right: 10px; }
+      #content form #btn {
+        position: relative;
+        display: block;
+        text-align: center;
+        margin: 0 auto; }
+        #content form #btn input {
+          position: relative;
+          width: 120px;
+          padding: 10px;
+          font-size: 20px;
+          background: #0E2687;
+          color: white; } }
+
 /*# sourceMappingURL=contact.css.map */

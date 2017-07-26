@@ -34,4 +34,34 @@ body {
         font-size: 18px;
         color: black; }
 
+@media only screen and (max-width: 1024px) {
+  #content {
+    position: relative; }
+    #content #ins1 {
+      position: relative;
+      padding: 20px; }
+      #content #ins1 #logo {
+        position: relative;
+        width: 40%;
+        margin: 0 auto; }
+        #content #ins1 #logo img {
+          width: 100%;
+          margin: 0 auto; }
+      #content #ins1 #descrip {
+        padding: 0 20px; }
+        #content #ins1 #descrip #title {
+          font-size: 25px;
+          color: black;
+          font-weight: bold;
+          padding: 2px 0;
+          border-bottom: 3px solid #0E2687;
+          width: 60%;
+          text-align: center;
+          margin: 0 auto; }
+        #content #ins1 #descrip #info {
+          width: 100%;
+          margin: 0 auto;
+          font-size: 18px;
+          color: black; } }
+
 /*# sourceMappingURL=us.css.map */

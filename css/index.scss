@@ -16,6 +16,13 @@ $line: 2px solid white;
     transform: translate(-50%, -50%);
 }
 
+@mixin centrado_serv {
+    position: absolute;
+    left: 60%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
 @mixin margin_side {
     margin-right: auto;
     margin-left: auto;
@@ -169,31 +176,51 @@ body {
                 .fil {
                     position: relative;
                     width: 100%;
+                    text-align: center;
                     display: flex;
+                    //background: red;
 
                     .serv {
                         text-decoration: none;
                         padding: 20px;
                         text-align: center;
                         margin: 10px auto;
-
-                        span {
-                            font-size: 40px;
-                            color: white;
-                            padding: 25px;
-                            border-radius: 255px;
-                            text-align: center;
-                            background: $back-s;
-                            width: 90%;
-                            margin: 0 auto;
+                        width: 100%;
+                        //background: blue;
+                        
+                        a {
+                            text-decoration: none;
+                            
+                            span {
+                                font-size: 40px;
+                                color: white;
+                                padding: 25px;
+                                border-radius: 255px;
+                                text-align: center;
+                                background: $back-s;
+                                width: auto;
+                                margin: 0 auto;
+                                transition: 0.3s;
+                                
+                                &:hover {
+                                    transition: 0.3s;
+                                    background: white;
+                                    color: $back-g;
+                                }
+                            }
                         }
-
+                        
                         #info {
-                            font-size: 16px;
+                            font-size: 18px;
                             color: white;
-                            padding: 10px;
+                            padding: 20px;
+                            margin: 0 auto;
+                            text-align: center;
+                            //background: green;
                         }
                     }
+                    
+                    
                 }
             }
         }
@@ -244,8 +271,59 @@ body {
 
 // Smartphones
 @media only screen and (max-width:1024px) {
+    body {
+        width: 100%;
+    }
+    
+    .intro {
+        position: relative;
+        @include centrado_intro;
+
+        #ins {
+            position: relative;
+            
+            #logo {
+                position: relative;
+                width: 70%;
+                margin: 0 auto;
+                text-align: center;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            #btn {
+                position: relative;
+                display: block;
+                text-align: center;
+                @include margin_side;
+
+                input {
+                    position: relative;
+                    width: 120px;
+                    padding: 10px;
+                    font-size: 20px;
+                    background: $back-g;
+                    color: white;
+                }
+            }
+        }
+    }
+    
     .start {
+        position: relative;
+        
         #content {
+            .slide_ppal {
+                width: 70%;
+                margin: 5% auto;
+
+                img {
+                    width: 100%;
+                }
+            }
+            
             #ins2 {
                 display: block;
                 width: 80%;
@@ -259,7 +337,7 @@ body {
                 #mision_m {
                     display: block;
                     position: relative;
-                    width: 60%;
+                    width: 100%;
                     margin: 50px auto;
 
                     #title {
@@ -288,7 +366,7 @@ body {
                 #vision_m {
                     display: block;
                     position: relative;
-                    width: 60%;
+                    width: 100%;
                     margin: 10px auto;
 
                     #title {
@@ -312,35 +390,53 @@ body {
             }
             
             #ins3 {
+                padding: 10px;
+                
                 #title {
                     font-size: 18px;
                     color: white;
                     font-weight: bold;
                     padding: 2px 0;
                     border-bottom: $line_title_w;
-                    width: 40%;
+                    width: 60%;
                     margin: 0 auto;
                     text-align: center;
                 }
                 
                 #services {
+                    text-align: center;
+                    align-content: center;
+                    
                     .fil {
                         display: block;
+                        width: 100%;
+                        //background: red;
                         
                         .serv {
                             text-decoration: none;
-                            padding: 20px;
+                            padding: 0px;
                             text-align: center;
-                            margin: 30% auto;
+                            width: 100%;
+                            margin: 0 auto;
+                            display: flex;
+                            //background: blue;
                             
-                            span {
-                                font-size: 30px;
-                                padding: 25px;
+                            a {
+                                span {
+                                    font-size: 30px;
+                                    padding: 20px;
+                                    text-align: center;
+                                    margin: 0 auto;
+                                    width: auto;
+                                } 
                             }
-
+                            
                             #info {
-                                font-size: 16px;
-                                padding: 10px;
+                                font-size: 15px;
+                                text-align: center;
+                                width: 80%;
+                                @include centrado_serv;
+                                //background: green;
                             }
                         }
                     }
@@ -349,13 +445,16 @@ body {
             
             #ins4 {
                 #f_clients {
+                    width: 100%;
+                    padding: 0 10px;
+                    
                     #title {
                         font-size: 18px;
                         color: black;
                         font-weight: bold;
                         padding: 2px 0;
                         border-bottom: $line_title;
-                        width: 50%;
+                        width: 100%;
                         margin: 0 auto;
                         text-align: center;
 
@@ -369,7 +468,7 @@ body {
                 }
                 
                 #btn {
-                    width: 20%;
+                    width: 100px;
                     border-radius: 20px;
                     background: $back-f;
                     text-align: center;
