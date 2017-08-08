@@ -1,13 +1,91 @@
-/*
-@import "format.css";
-@import "header.css";
-@import "footer.css";
-*/
 body {
   width: 100%; }
   body p {
     margin: 0;
     padding: 0; }
+
+#login {
+  position: relative;
+  margin: 0 auto;
+  width: 90%; }
+  #login #logo {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px; }
+    #login #logo img {
+      width: 30%; }
+  #login #mens {
+    position: relative;
+    display: flex; }
+    #login #mens .adv {
+      position: relative;
+      padding: 20px;
+      color: black; }
+      #login #mens .adv h1 {
+        text-align: center;
+        color: black; }
+      #login #mens .adv form {
+        background: #dedede;
+        border-radius: 10px;
+        border: 2px solid #222222;
+        padding: 20px; }
+        #login #mens .adv form #ins input {
+          padding: 5px; }
+    #login #mens .adv1 {
+      width: 50%; }
+      #login #mens .adv1 p {
+        font-size: 16px; }
+      #login #mens .adv1 form #ins {
+        width: 90%; }
+        #login #mens .adv1 form #ins input {
+          width: 80%; }
+      #login #mens .adv1 form #btn {
+        position: relative;
+        display: block;
+        text-align: center;
+        margin: 0 auto; }
+        #login #mens .adv1 form #btn input {
+          position: relative;
+          width: 120px;
+          padding: 10px;
+          font-size: 16px;
+          background: #0E2687;
+          color: white; }
+    #login #mens .adv2 {
+      width: 40%;
+      margin: 0 auto;
+      text-align: center; }
+      #login #mens .adv2 form {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 100px; }
+        #login #mens .adv2 form #ins {
+          width: 90%;
+          margin: 0 auto;
+          text-align: center; }
+          #login #mens .adv2 form #ins input {
+            width: 70%; }
+        #login #mens .adv2 form #btn {
+          position: relative;
+          display: block;
+          text-align: center;
+          margin: 0 auto; }
+          #login #mens .adv2 form #btn input {
+            position: relative;
+            width: 120px;
+            padding: 10px;
+            font-size: 16px;
+            background: #0E2687;
+            color: white; }
+      #login #mens .adv2 a {
+        position: relative;
+        width: 30%;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 5px;
+        color: black; }
 
 #content {
   position: relative;
@@ -28,6 +106,40 @@ body {
       width: 20%; }
 
 @media only screen and (max-width: 1024px) {
+  #login {
+    position: relative;
+    margin: 0 auto;
+    width: 90%; }
+    #login #logo {
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px; }
+      #login #logo img {
+        width: 100%; }
+    #login #mens {
+      display: block; }
+      #login #mens .adv {
+        margin: 0 auto; }
+      #login #mens .adv1 {
+        width: 90%; }
+        #login #mens .adv1 form #ins {
+          width: 100%;
+          margin: 0 auto; }
+          #login #mens .adv1 form #ins input {
+            width: 100%; }
+      #login #mens .adv2 {
+        width: 90%; }
+        #login #mens .adv2 form {
+          width: 100%;
+          margin-top: 0; }
+          #login #mens .adv2 form #ins {
+            width: 100%; }
+            #login #mens .adv2 form #ins input {
+              width: 100%; }
+          #login #mens .adv2 form a {
+            width: 50%; }
+
   #content {
     position: relative; }
     #content #img_bank {
