@@ -25,12 +25,7 @@
 	</head>
 	
     <body>
-      
-        <?php 
-            $user = "OrusSociety";
-            $pass = "orus@security@";
-        ?>
-       
+             
         <div id="login">
             <div id="logo">
                 <img src="images/orus.png">
@@ -53,7 +48,7 @@
                             <input type="text" name="lastname" id="lastname" placeholder="Introduzca su apellido" required>
                             <br><br>
                             <input type="text" name="emp" id="emp" placeholder="Introduzca su empresa" required>
-                            <br><p><strong>Nota: De no ser parte de una empresa, coloque "N/A".</strong></p>
+                            <br><p style="font-size:13px;"><strong>Nota: De no ser parte de una empresa, coloque "N/A".</strong></p>
                             <br>
                             <input type="email" name="mail" id="mail" placeholder="Introduzca su email" required>
                         </div>
