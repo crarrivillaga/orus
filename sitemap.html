@@ -3,13 +3,17 @@
     <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1"><!--- RESPONSIVE (Viewport para dispositivos moviles) -->
-        <meta name="description" content="Acerca de la empresa/pagina"> <!--Lo que aparece al buscar en google-->
-        <meta name="keywords" contect="">
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!--bootstrap-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> <!--bootstrap-->
-        <link rel="stylesheet" href="css/sitemap.css"> <!--external css-->
+        
+        <!--external css-->
+        <link rel="stylesheet" href="css/sitemap.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/format.css">
         <link rel="stylesheet" href="css/normalize.css"> 
+        
         <link rel="stylesheet" href="icons/fonts.css"> <!--iconos-->
         <link rel="icon" href="images/favicon.ico"> <!--favicon-->
 
@@ -17,32 +21,14 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> <!--bootstrap-->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> <!--- jquery -->        
         
-        <script>
-            $(document).ready(function(){
-                $('#sky').click(function(){
-                    $('body, html').animate({
-                        scrollTop: '0px'
-                    }, 300); //300, velocidad en la que sube                    
-                }); 
-                
-                $(window).scroll(function(){
-                    if($(this).scrollTop() > 0){
-                        $('#sky').slideDown(300);
-                    }else{
-                        $('#sky').slideUp(300);
-                    } 
-                });
-            });
-        </script>
-        
-        <title>Seguridad Arce</title>
+        <title>ORUS</title>
 	</head>
 	
     <body>
         <header id="menu_desk">
             <div id="ins">
                 <div id="logo">
-                    <img src="images/logo.jpg">
+                    <img src="images/orus.png">
                 </div>
 
                 <div id="menu">
@@ -64,7 +50,7 @@
                 </div>
 
                 <div id="logo">
-                    <img src="images/logo.jpg">
+                    <img src="images/orus.png">
                 </div>                    
             </div>
 
@@ -117,13 +103,13 @@
 	            
 	            <div class="sec sec3">
 	                <p id="title">Dirección</p>
-	                <a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, inventore assumenda!</a>
+	                <p>Santiago, Chile</p>
 	                <br><br>
-	                <p id="num">123-4567</p>
+	                <a id="num" href="tel:+56989839907">+56 9 8983 9907</a>
 	            </div>
 	        </div>
 	        <br>
-	        <p id="end">Seguridad Arce - Todos los derechos reservados.</p>
+	        <p id="end">ORUS - Todos los derechos reservados.</p>
 	    </footer>
 	    
 	    <script src="js/movil.js"></script>

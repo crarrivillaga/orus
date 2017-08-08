@@ -3,13 +3,17 @@
     <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1"><!--- RESPONSIVE (Viewport para dispositivos moviles) -->
-        <meta name="description" content="Acerca de la empresa/pagina"> <!--Lo que aparece al buscar en google-->
-        <meta name="keywords" contect="">
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!--bootstrap-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> <!--bootstrap-->
-        <link rel="stylesheet" href="css/contact.css"> <!--external css-->
+        
+        <!--external css-->
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/format.css">
         <link rel="stylesheet" href="css/normalize.css"> 
+        
         <link rel="stylesheet" href="icons/fonts.css"> <!--iconos-->
         <link rel="icon" href="images/favicon.ico"> <!--favicon-->
 
@@ -17,32 +21,14 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> <!--bootstrap-->
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> <!--- jquery -->        
         
-        <script>
-            $(document).ready(function(){
-                $('#sky').click(function(){
-                    $('body, html').animate({
-                        scrollTop: '0px'
-                    }, 300); //300, velocidad en la que sube                    
-                }); 
-                
-                $(window).scroll(function(){
-                    if($(this).scrollTop() > 0){
-                        $('#sky').slideDown(300);
-                    }else{
-                        $('#sky').slideUp(300);
-                    } 
-                });
-            });
-        </script>
-        
-        <title>Seguridad Arce</title>
+        <title>ORUS</title>
 	</head>
 	
     <body>
         <header id="menu_desk">
             <div id="ins">
                 <div id="logo">
-                    <img src="images/logo.jpg">
+                    <img src="images/orus.png">
                 </div>
 
                 <div id="menu">
@@ -64,7 +50,7 @@
                 </div>
 
                 <div id="logo">
-                    <img src="images/logo.jpg">
+                    <img src="images/orus.png">
                 </div>                    
             </div>
 
@@ -79,8 +65,9 @@
             </div>
         </header>
 	    
-	    <div id="content">
-	        <form method="post" action="php/form.php">
+	    <div id="content">            
+	        <form method="post" action="php/contact_form.php">
+            <!--No hace falta colocar el atributo action porque el archivo msg.js ya lo esta llamando en su url, lo mismo sucede con el atributo method-->
 	            <div id="ins">
                     <p><span class="icon-mail4"></span>Escríbenos</p>
                     <br><br>
@@ -88,13 +75,13 @@
 	                <br><br>
 	                <input type="text" name="lastname" id="lastname" placeholder="Introduzca su apellido" required>
 	                <br><br>
-	                <input type="text" name="mail" id="mail" placeholder="Introduzca su email" required>
+	                <input type="email" name="mail" id="mail" placeholder="Introduzca su email" required>
 	                <br><br>
 	                <input type="text" name="emp" id="emp" placeholder="Introduzca su empresa">
 	                <br><br>
-	                <input type="text" name="num" id="num" placeholder="Introduzca su n° de telf." required>
+	                <input type="tel" name="num" id="num" placeholder="Introduzca su n° de telf." required>
 	                <br><br>
-	                <textarea rows="5" placeholder="Escribir mensaje" required></textarea>
+	                <textarea rows="5" placeholder="Escribir mensaje" name="msg" required></textarea>
 	            </div>
 	            
 	            <br>
@@ -129,15 +116,16 @@
 	            
 	            <div class="sec sec3">
 	                <p id="title">Dirección</p>
-	                <a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, inventore assumenda!</a>
+	                <p>Santiago, Chile</p>
 	                <br><br>
-	                <p id="num">123-4567</p>
+	                <a id="num" href="tel:+56989839907">+56 9 8983 9907</a>
 	            </div>
 	        </div>
 	        <br>
-	        <p id="end">Seguridad Arce - Todos los derechos reservados.</p>
+	        <p id="end">ORUS - Todos los derechos reservados.</p>
 	    </footer>
 	    
 	    <script src="js/movil.js"></script>
+	    <script src="js/msg.js"></script>
     </body>
 </html>

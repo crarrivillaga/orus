@@ -2,7 +2,8 @@ footer {
   position: relative;
   width: 100%;
   background: #222222;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-top: 20px; }
   footer p {
     margin: 0;
     padding: 0; }
@@ -22,7 +23,7 @@ footer {
         font-weight: bold;
         margin: 0;
         padding: 0; }
-      footer #insf .sec a {
+      footer #insf .sec a, footer #insf .sec p {
         text-decoration: none;
         font-size: 14px;
         color: white; }
@@ -51,7 +52,10 @@ footer {
     font-weight: bold; }
 
 @media only screen and (max-width: 1024px) {
-  footer #insf {
-    display: none; } }
+  footer {
+    position: fixed;
+    bottom: 0; }
+    footer #insf {
+      display: none; } }
 
 /*# sourceMappingURL=footer.css.map */

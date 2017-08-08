@@ -1,6 +1,6 @@
-@import url(format.css);
-@import url(header.css);
-@import url(footer.css);
+/*@import "format.css";
+@import "header.css";
+@import "footer.css";*/
 body {
   width: 100%; }
   body p {
@@ -10,6 +10,26 @@ body {
 #content {
   position: relative;
   padding: 20px; }
+  #content #msg {
+    position: relative;
+    margin: 30px 0; }
+    #content #msg h1 {
+      font-weight: bold;
+      color: black; }
+    #content #msg p {
+      font-size: 16px;
+      color: black; }
+    #content #msg a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      transition: 0.2s;
+      padding: 10px; }
+      #content #msg a:hover {
+        background: #222222;
+        color: white;
+        border-radius: 5px;
+        transition: 0.2s; }
   #content #sitemap {
     position: relative; }
     #content #sitemap p {

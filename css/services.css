@@ -1,12 +1,15 @@
-@import url(format.css);
-@import url(header.css);
-@import url(footer.css);
+/*@import "format.css";
+@import "header.css";
+@import "footer.css";*/
 body {
   width: 100%; }
 
 p {
   margin: 0;
   padding: 0; }
+
+#content {
+  margin-bottom: 90px; }
 
 .panel-group {
   position: relative;

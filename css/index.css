@@ -1,6 +1,6 @@
-@import url(format.css);
-@import url(header.css);
-@import url(footer.css);
+/*@import "format.css";
+@import "header.css";
+@import "footer.css";*/
 body {
   width: 100%;
   margin: 0 auto; }
@@ -34,13 +34,21 @@ body {
         width: 120px;
         padding: 10px;
         font-size: 20px;
-        background: #0E2687;
-        color: white; }
+        background: white;
+        color: black;
+        transition: 0.4s;
+        border-radius: 10px;
+        border: 2px solid #222222; }
+        .intro #ins #btn input:hover {
+          transition: 0.4s;
+          background: #222222;
+          color: white; }
 
 .start {
   position: relative; }
   .start #content {
-    position: relative; }
+    position: relative;
+    margin-bottom: 70px; }
     .start #content .slide_ppal {
       width: 50%;
       margin: 5% auto; }

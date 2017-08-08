@@ -1,6 +1,8 @@
-@import url(format.css);
-@import url(header.css);
-@import url(footer.css);
+/*
+@import "format.css";
+@import "header.css";
+@import "footer.css";
+*/
 body {
   width: 100%; }
   body p {
@@ -8,7 +10,8 @@ body {
     padding: 0; }
 
 #content {
-  position: relative; }
+  position: relative;
+  margin-bottom: 150px; }
   #content #img_bank {
     position: relative;
     width: 90%;
