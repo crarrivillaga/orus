@@ -15,6 +15,26 @@ body {
     padding: 20px; }
     #login #logo img {
       width: 30%; }
+#login #warn {
+    color: white;
+    padding: 20px;
+    background: #af1d1d;
+    margin-bottom: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+#login #warn h1 {
+    font-weight: bold;
+}
+#login #warn p {
+    font-size: 16px;
+    color: white;
+}
+#login #warn a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
   #login #mens {
     position: relative;
     display: flex; }

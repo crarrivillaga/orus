@@ -12,6 +12,23 @@ body {
 #content {
   position: relative;
   padding: 20px; }
+#content #warn {
+    color: white;
+    padding: 20px;
+    background: #af1d1d;
+    margin-bottom: 10px;
+}
+#content #warn h1 {
+    font-weight: bold;
+}
+#content #warn p {
+    font-size: 16px;
+}
+#content #warn a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
 #content #contact {
     display: none;
 }

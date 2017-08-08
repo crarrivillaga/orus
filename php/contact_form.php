@@ -2,6 +2,8 @@
 
 	include "conectardb.php";
 
+    header("Location:../contact.html");
+
     $destino = "contacto@orus.com"; //Correo al cual llegaran los mail 
     $name = $_POST['name'];
     $apellido = $_POST['lastname'];
