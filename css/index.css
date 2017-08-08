@@ -48,7 +48,7 @@ body {
   position: relative; }
   .start #content {
     position: relative;
-    margin-bottom: 0px; }
+    margin-bottom: -20px; }
     .start #content .slide_ppal {
       width: 50%;
       margin: 5% auto; }
@@ -185,6 +185,10 @@ body {
 
   .start {
     position: relative; }
+    .start #content {
+        position: relative;
+        margin-bottom: 64px;
+    }
     .start #content .slide_ppal {
       width: 70%;
       margin: 5% auto; }
