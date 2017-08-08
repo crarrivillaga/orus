@@ -12,6 +12,9 @@ body {
 #content {
   position: relative;
   padding: 20px; }
+#content #contact {
+    display: none;
+}
   #content form {
     position: relative;
     width: 50%;
@@ -55,7 +58,31 @@ body {
   #content {
     position: relative;
     padding: 10px;
-    margin-bottom: 90px; }
+    top: -70px;
+    margin-bottom: 60px; }
+    #content #contact {
+        position: relative;
+        display: block;
+    }
+    #content #contact #insc {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #content #contact #insc #tlf,#addr {
+        width: 100%;
+        padding: 20px;
+    }
+    #content #contact #insc h3,p {
+        color: black;
+    }
+    #content #contact #insc h3 {
+        font-weight: bold;
+    }
+    #content #contact #insc a {
+        text-decoration: none;
+        color: black;
+    }
     #content form {
       position: relative;
       width: 85%;
