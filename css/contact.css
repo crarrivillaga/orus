@@ -77,6 +77,12 @@ body {
     padding: 10px;
     top: -70px;
     margin-bottom: 60px; }
+    #content #warn h1 {
+        text-align: center;
+    }
+    #content #warn p {
+        color: white;
+    }
     #content #contact {
         position: relative;
         display: block;
