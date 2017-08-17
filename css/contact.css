@@ -13,6 +13,7 @@ body {
   position: relative;
   padding: 20px; }
 #content #warn {
+    display: none;
     color: white;
     padding: 20px;
     background: #af1d1d;

@@ -16,6 +16,7 @@ body {
     #login #logo img {
       width: 30%; }
 #login #warn {
+    display: none;
     color: white;
     padding: 20px;
     background: #af1d1d;
